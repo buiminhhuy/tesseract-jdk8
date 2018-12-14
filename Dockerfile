@@ -1,4 +1,4 @@
-FROM tesseractshadow/tesseract4cmp
+FROM tesseractshadow/tesseract4re
 
 # Optional: Type the author of this Docker image
 MAINTAINER Huy Bui <minhhuybui@gmail.com>
