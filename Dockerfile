@@ -3,6 +3,8 @@ FROM tesseractshadow/tesseract4re
 # Optional: Type the author of this Docker image
 MAINTAINER Huy Bui <minhhuybui@gmail.com>
 
+RUN apt-get -q -y install tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-nld tesseract-ocr-vie tesseract-ocr-chi-sim
+
 # This is in accordance to : https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
 RUN apt-get update && \
 apt-get install -y openjdk-8-jdk && \
