@@ -28,7 +28,6 @@ ENV PATH $PATH:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin:/usr/lib/jvm/java-8-ope
 ENV LANG C.UTF-8
 
 RUN java -version
-RUN tesseract --version
 
 #pasteur command lines
 VOLUME /tmp
