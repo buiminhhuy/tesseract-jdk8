@@ -30,6 +30,7 @@ ENV LANG C.UTF-8
 RUN java -version
 
 #pasteur command lines
+WORKDIR /home
 VOLUME /tmp
 ARG JAR_FILE=./build/libs/pipeline-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar
