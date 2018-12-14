@@ -4,6 +4,7 @@ FROM tesseractshadow/tesseract4re
 MAINTAINER Huy Bui <minhhuybui@gmail.com>
 
 RUN apt-get -q -y install tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-nld tesseract-ocr-vie tesseract-ocr-chi-sim
+ENV TESSDATA_PREFIX /usr/local/share/tessdata
 
 # This is in accordance to : https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
 RUN apt-get update && \
