@@ -30,8 +30,8 @@ ENV LANG C.UTF-8
 RUN java -version
 
 #pasteur command lines
-WORKDIR /home
+WORKDIR /app
 VOLUME /tmp
 ARG JAR_FILE=./build/libs/pipeline-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} /home/app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/home/app.jar"]
+COPY ${JAR_FILE} ./pipeline.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","pipeline.jar"]
